@@ -16,7 +16,7 @@ pipeline{
             }
             stage('Deploy war file to the Development'){
                 steps{
-                    tomcatDeploy(172.31.26.51,"tomcat-pipeline-dev","myweb")
+                    tomcatDeploy("172.31.26.51","tomcat-pipeline-dev","myweb")
                     
                 }
             }
