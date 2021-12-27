@@ -16,7 +16,7 @@ pipeline{
         stage("Deploy to Tomcat Development"){
             steps{
                 
-                 tomcatDeploy(172.31.3.50,"Tomcat-Development",myweb)
+                 tomcatDeploy("172.31.3.50","Tomcat-Development","myweb")
                ]
             }
         }
