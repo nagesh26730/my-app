@@ -20,7 +20,7 @@ pipeline{
             }
             }
         }
-       # stage("Deploy to Tomcat qa"){
+     /*  # stage("Deploy to Tomcat qa"){
             #steps{
               # sshagent(['Tomcat-qa']) {
                 #  sh "scp -o StrictHostKeyChecking=no target/myweb*.war ec2-user@172.31.5.166:/opt/tomcat8/webapps/"
@@ -28,7 +28,7 @@ pipeline{
                   #sh "ssh ec2-user@172.31.5.166 sudo /opt/tomcat8/bin/startup.sh"
                  # }
            # }
-       # }
+       # }*/
     }
     
        post {
