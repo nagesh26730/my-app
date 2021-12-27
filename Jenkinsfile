@@ -1,4 +1,4 @@
-@Library('app_libs') _
+@Library('app-libs') _
 pipeline{
     agent any
     stages{
