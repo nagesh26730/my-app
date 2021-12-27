@@ -14,11 +14,9 @@ pipeline{
         }
         stage("Deploy to Tomcat Development"){
             steps{
-               sshagent(['Tomcat-Development']) {
-                  sh "scp -o StrictHostKeyChecking=no target/myweb*.war ec2-user@172.31.3.50:/opt/tomcat8/webapps/"
-                  sh "ssh ec2-user@172.31.3.50 sudo /opt/tomcat8/bin/shutdown.sh"
-                  sh "ssh ec2-user@172.31.3.50 sudo /opt/tomcat8/bin/startup.sh"
-                  }
+                
+                 tomcatDeploy(172.31.3.50,"Tomcat-Development",myweb*)
+               ]
             }
         }
         stage("Deploy to Tomcat qa"){
