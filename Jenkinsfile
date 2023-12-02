@@ -16,7 +16,7 @@ pipeline {
                                            type: 'war']],
            credentialsId: 'nexus', 
            groupId: 'in.javahome',
-           nexusUrl: '172.31.71.247:8081',
+           nexusUrl: '172.31.35.232:8081',
            nexusVersion: 'nexus3', 
            protocol: 'http',
            repository: 'my-app-release',
