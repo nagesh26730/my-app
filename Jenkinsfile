@@ -12,7 +12,7 @@ pipeline {
       steps{
         nexusArtifactUploader artifacts: [[artifactId: 'myweb',
                                            classifier: '', 
-                                           file: 'target/my-app-0.0.1.war',
+                                           file: 'target/myweb-0.0.1.war',
                                            type: 'war']],
            credentialsId: 'nexus', 
            groupId: 'in.javahome',
