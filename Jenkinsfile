@@ -3,7 +3,7 @@ pipeline {
   agent any
   
   stages{
-     stage("Maven Build"){
+     stage("SCM"){
       steps{
         git 'https://github.com/nagesh26730/my-app'
       }
